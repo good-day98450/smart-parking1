@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Slot Management - Admin</title>
+  <link rel="stylesheet" href="slots.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 Parking Slot Management</h1>
+    <button class="back-btn" onclick="goBack()">← Back to Dashboard</button>
+  </header>
+
+  <main>
+    <div class="stats">
+      <div class="stat available">🟢 Available: <span id="availableCount">0</span></div>
+      <div class="stat occupied">🔴 Occupied: <span id="occupiedCount">0</span></div>
+      <div class="stat reserved">🟡 Reserved: <span id="reservedCount">0</span></div>
+    </div>
+
+    <div class="slots-container" id="slotsContainer">
+      <!-- Slots generated dynamically -->
+    </div>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025 | Admin Panel</p>
+  </footer>
+
+  <script src="slots.js"></script>
+</body>
+</html>

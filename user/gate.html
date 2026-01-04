@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gate Entry System - Smart Parking</title>
+  <link rel="stylesheet" href="gate.css" />
+</head>
+<body>
+  <header>
+    <h1>🚧 Smart Parking Gate System</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section class="scanner-container">
+      <h2>📷 QR Code Scanner</h2>
+      <p>Scan the QR code from user’s ticket to verify booking.</p>
+
+      <div id="qr-reader" class="scanner-box"></div>
+      <p id="resultText"></p>
+
+      <div id="bookingInfo" class="info-box"></div>
+    </section>
+
+    <section class="controls">
+      <button id="openGateBtn" disabled onclick="openGate()">🟢 Open Gate</button>
+      <button id="denyBtn" disabled onclick="denyAccess()">🔴 Deny Entry</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025 | Gate Management</p>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="gate.js"></script>
+</body>
+</html>

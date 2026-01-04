@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - Smart Parking</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>   
+  <header>
+    <h1>🚗 Smart Parking User Dashboard</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <div class="stats">
+      <div class="stat available">🟢 Available Slots: <span id="availableCount">0</span></div>
+      <div class="stat occupied">🔴 Occupied Slots: <span id="occupiedCount">0</span></div>
+      <div class="stat reserved">🟡 Reserved Slots: <span id="reservedCount">0</span></div>
+    </div>
+
+    <div class="actions">
+      <button onclick="window.location.href='booking.html'">🅿️ Book a Slot</button>
+      <button onclick="window.location.href='payment.html'">💳 Payments</button>
+      <button onclick="window.location.href='qr.html'">🔲 My QR Code</button>
+      <button onclick="window.location.href='gate.html'">🚧 Gate Entry</button>
+    </div>
+
+    <div class="slots-container" id="slotsContainer"></div>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

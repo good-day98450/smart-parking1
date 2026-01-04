@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Smart Parking</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <header>
+    <h1>💳 Payment Portal</h1>
+    <button class="back-btn" onclick="goBack()">← Back</button>
+  </header>
+
+  <main>
+    <div class="payment-box">
+      <h2>Booking Summary</h2>
+      <div id="bookingDetails" class="details-box">
+        <!-- Booking info loaded dynamically -->
+      </div>
+
+      <h2>Payment Method</h2>
+      <select id="paymentMethod">
+        <option value="">-- Select Payment Method --</option>
+        <option value="upi">UPI</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="cash">Cash at Counter</option>
+      </select>
+
+      <button id="payNowBtn" onclick="processPayment()">Pay Now</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="payment.js"></script>
+</body>
+</html>

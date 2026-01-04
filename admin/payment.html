@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Payment Dashboard</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <header>
+    <h1>💳 Admin Payment Dashboard</h1>
+    <div class="header-controls">
+      <label for="userFilter">Show:</label>
+      <select id="userFilter">
+        <option value="all">All</option>
+      </select>
+      <button class="back-btn" onclick="goBack()">← Back to Dashboard</button>
+    </div>
+  </header>
+
+  <section class="summary">
+    <div class="card">
+      <h3>Total Payments</h3>
+      <p id="totalPayments">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Completed</h3>
+      <p id="completedPayments">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Pending</h3>
+      <p id="pendingPayments">₹0</p>
+    </div>
+  </section>
+
+  <section class="transactions">
+    <h2>Recent Transactions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Transaction ID</th>
+          <th>User</th>     
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="transactionTable"></tbody>
+    </table>
+  </section>
+
+  <script src="payment.js"></script>
+</body>
+</html>

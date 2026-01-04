@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Parking Slot</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <header>
+    <h1>🅿️ Book Your Parking Slot</h1>
+    <button class="back-btn" onclick="goBack()">← Back to Dashboard</button>
+  </header>
+
+  <main>
+    <div class="form-box">
+      <h2>Select Vehicle Type</h2>
+      <select id="vehicleType">
+        <option value="">-- Choose Vehicle Type --</option>
+        <option value="2-wheeler">🛵 2-Wheeler</option>
+        <option value="4-wheeler">🚗 4-Wheeler</option>
+        <option value="vip">👑 VIP Vehicle</option>
+        <option value="electric">⚡ Electric Vehicle</option>
+      </select>
+
+      <h2>Available Slots</h2>
+      <div id="availableSlots" class="slots-container">
+      </div>
+
+      <button id="confirmBookingBtn" onclick="confirmBooking()" disabled>Confirm Booking</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025</p>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>
+
+
+

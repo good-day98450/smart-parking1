@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: white;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: #ff4444;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.logout-btn:hover { background-color: #e53935; }
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanner-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+.scanner-box {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2);
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.95rem;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#openGateBtn {
+  background-color: #4caf50;
+  color: white;
+}
+#openGateBtn:hover {
+  background-color: #388e3c;
+}
+
+#denyBtn {
+  background-color: #f44336;
+  color: white;
+}
+#denyBtn:hover {
+  background-color: #c62828;
+}
+
+footer {
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  margin-top: auto;
+}

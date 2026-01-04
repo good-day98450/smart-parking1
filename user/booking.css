@@ -1,0 +1,100 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.back-btn {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.back-btn:hover { background-color: #f4511e; }
+
+.form-box {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+select {
+  width: 80%;
+  padding: 10px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.slots-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.slot {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.slot.available { background: #4caf50; }
+.slot.selected { background: #00bcd4; transform: scale(1.1); }
+.slot.occupied { background: #f44336; cursor: not-allowed; }
+
+button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover { background-color: #0097a7; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+

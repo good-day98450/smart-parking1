@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code - Smart Parking</title>
+  <link rel="stylesheet" href="qr.css">
+</head>
+<body>
+  <header>
+    <h1>🔐 Your Parking QR Code</h1>
+    <button class="back-btn" onclick="goToDashboard()">🏠 Dashboard</button>
+  </header>
+
+  <main>
+    <div class="qr-container">
+      <div class="qr-box">
+        <h2>Booking Confirmed!</h2>
+        <p>Show this QR code at the gate to access your parking slot.</p>
+
+        <canvas id="qrCode"></canvas>
+
+        <div id="bookingDetails" class="details-box"></div>
+
+        <button class="download-btn" onclick="downloadQR()">⬇️ Download QR</button>
+      </div>
+
+      <div class="scanner-section">
+        <h2>📷 Scan QR (For Gate Entry)</h2>
+        <video id="preview" width="250" height="250"></video>
+        <p id="scanResult"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025</p>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="qr.js"></script>
+</body>
+</html>

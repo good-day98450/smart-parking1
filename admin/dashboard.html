@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Smart Parking System</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Admin Dashboard</h1>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <section class="info-section">
+      <h2>Welcome, Admin 👋</h2>
+      <p>Manage users, monitor parking slots, and oversee system operations here.</p>
+    </section>
+
+    <section class="admin-panels">
+      <div class="panel">
+        <h3>Registered Users</h3>
+        <ul id="userList"></ul>
+      </div>
+
+      <div class="panel">
+        <h3>Parking Statistics</h3>
+        <p>Total Slots: 50</p>
+        <p>Occupied Slots: 18</p>
+        <p>Available Slots: 32</p>
+      </div>
+
+      <div class="panel">
+        <h3>System Controls</h3>
+        <button onclick="clearUsers()">Delete All User Data</button>
+        <button onclick="viewLogs()">View System Logs</button>
+      </div>
+    </section>
+  </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <h1>🧠 Smart Parking Admin Dashboard</h1>
+    </div>
+    <div class="header-right">
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <!-- Main Dashboard Content -->
+  <main>
+    <div class="dashboard-container">
+      <!-- Payments -->
+      <div class="card" onclick="goToPage('payment.html')">
+        <h3>💳 Payments</h3>
+        <p>View & manage all payment records</p>
+      </div>
+
+      <!-- Parking Slots -->
+      <div class="card" onclick="goToPage('slots.html')">
+        <h3>🚗 Parking Slots</h3>
+        <p>Monitor and update slot status</p>
+      </div>
+
+      <!-- Manage Users -->
+      <div class="card" onclick="goToPage('manage.html')">
+        <h3>👥 Manage Users</h3>
+        <p>View, Block, or Delete Registered Users</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Smart Parking System © 2025 | Admin Panel</p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="dashboard.js"></script>
+</body>
+</html>

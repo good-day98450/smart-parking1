@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Users - Smart Parking Admin</title>
+  <link rel="stylesheet" href="manage.css" />
+</head>
+<body>
+  <header>
+    <h1>👥 Manage Registered Users</h1>
+    <button class="back-btn" onclick="goBack()">← Back to Dashboard</button>
+  </header>
+
+  <main>
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userList">
+        <!-- Dynamic user rows added here -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Smart Parking System © 2025 | Admin Panel</p>
+  </footer>
+
+  <script src="manage.js"></script>
+</body>
+</html>
